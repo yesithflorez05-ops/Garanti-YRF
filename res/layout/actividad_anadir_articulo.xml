@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ActividadAnadirArticulo">
+
+    <TextView
+        android:id="@+id/texto_titulo_anadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir Nuevo Artículo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/campo_nombre_articulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Nombre del artículo (Ej: Televisor Samsung)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_titulo_anadir" />
+
+    <TextView
+        android:id="@+id/etiqueta_fecha_compra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fecha de Compra:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_nombre_articulo" />
+
+    <TextView
+        android:id="@+id/texto_fecha_compra_seleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar fecha..."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etiqueta_fecha_compra" />
+
+    <TextView
+        android:id="@+id/etiqueta_fecha_vencimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Vencimiento de Garantía:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_fecha_compra_seleccionada" />
+
+    <TextView
+        android:id="@+id/texto_fecha_vencimiento_seleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar fecha..."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etiqueta_fecha_vencimiento" />
+
+    <Button
+        android:id="@+id/boton_tomar_foto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Tomar Foto del Recibo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_fecha_vencimiento_seleccionada" />
+
+    <Button
+        android:id="@+id/boton_guardar_articulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Artículo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
